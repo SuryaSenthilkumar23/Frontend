@@ -1,0 +1,162 @@
+/* src/App.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Aligns logo and links to the edges */
+  align-items: center; /* Centers items vertically */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007aff;
+}
+
+.navbar .links {
+  display: flex;
+}
+
+.navbar .links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.navbar .links a:hover {
+  color: #007aff;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 240px;
+  background-color: #fff;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+}
+
+.sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar ul li a:hover {
+  color: #007aff;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Problem List Styles */
+.problem-list ul {
+  list-style: none;
+}
+
+.problem-list ul li {
+  background-color: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.problem-list ul li:hover {
+  background-color: #f7f8fa;
+}
+
+.problem-list ul li a {
+  text-decoration: none;
+  color: #007aff;
+}
+
+.problem-list ul li button {
+  background-color: #007aff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.problem-list ul li button:hover {
+  background-color: #005bb5;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: 1px solid #007aff;
+  color: #007aff;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #007aff;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #e1e4e8;
+  cursor: not-allowed;
+}
